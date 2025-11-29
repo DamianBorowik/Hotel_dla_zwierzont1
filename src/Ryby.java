@@ -1,5 +1,15 @@
-public class Ryby extends Zwierzeta {
-    enum gatunek{
-        nemo, karaś, karp, lin, płoć
+public class Ryby extends Zwierzeta
+{
+
+
+    enum rodzaj
+    {
+        slodko_wodne, morskie
     }
+
+
+
+
+
+
 }
