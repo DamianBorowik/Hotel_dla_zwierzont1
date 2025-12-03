@@ -1,5 +1,13 @@
-public class Gady extends Zwierzeta {
-    enum gatunek {
-        wąż, żółw, jaszczurka, gniewosz_plamisty
+public class Gady extends Zwierzeta
+{
+
+    enum rodzaj
+    {
+        woz, jaszczurka, zulw, krokodyl
     }
+
+    // Trzeba wprowadzić wyjątki gadów wodnych
+
+
+
 }
