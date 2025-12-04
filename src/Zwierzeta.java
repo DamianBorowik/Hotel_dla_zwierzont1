@@ -15,7 +15,11 @@ public abstract class Zwierzeta
 
 
 
+
+    int portwel;
     // Portwel osoby (można nie trzeba)?
+
+
 
     //Comparable lub Comparator dla wagi
 
