@@ -14,7 +14,7 @@ public class Main
         System.out.println("5.Zamknij");
     }
 
-    private static void dodajSsaka(int wiek, int rodzaj, int waga, String gatunek, int index)
+    private static void dodajSsaka(int wiek, int rodzaj, int waga, String gatunek, int index, int portwel)
     {
         Ssaki ssak = new Ssaki();
 
@@ -34,10 +34,11 @@ public class Main
         ssak.waga = waga;
         ssak.gatunek = gatunek;
         ssak.index = index;
+        ssak.portwel = portwel;
 
     }
 
-    private static void dodajGada(int wiek, int rodzaj, int waga, String gatunek, int index)
+    private static void dodajGada(int wiek, int rodzaj, int waga, String gatunek, int index, int portwel)
     {
         Gady gad = new Gady();
 
@@ -68,6 +69,8 @@ public class Main
         gad.waga = waga;
         gad.gatunek = gatunek;
         gad.index = index;
+        gad.portwel = portwel;
+
     }
 
 
@@ -238,6 +241,7 @@ public class Main
 
                             scanner.nextLine();
 
+                            System.out.println("Jaki Rodzaj");
                             System.out.println("1.Miesozerca");
                             System.out.println("2.Roslinozerca");
                             int rodzaj = scanner.nextInt();
@@ -263,11 +267,15 @@ public class Main
 
                             System.out.println("Podaj Gatunek");
                             String gatunek = scanner.nextLine();
+
                             scanner.nextLine();
 
+                            System.out.println("Podaj budzet na zostanie");
+                            int portwel = scanner.nextInt();
 
 
-                            dodajSsaka(wiek,rodzaj,waga,gatunek,index);
+
+                            dodajSsaka(wiek,rodzaj,waga,gatunek,index,portwel);
                             break;
 
 
@@ -282,6 +290,7 @@ public class Main
 
                             scanner.nextLine();
 
+                            System.out.println("Jaki Rodzaj");
                             System.out.println("1.woz");
                             System.out.println("2.jaszczurka");
                             System.out.println("3.zulw");
@@ -311,7 +320,10 @@ public class Main
                             gatunek = scanner.nextLine();
                             scanner.nextLine();
 
-                            dodajGada(wiek,rodzaj,waga,gatunek,index);
+                            System.out.println("Podaj budzet na zostanie");
+                            portwel = scanner.nextInt();
+
+                            dodajGada(wiek,rodzaj,waga,gatunek,index,portwel);
 
                             break;
 
